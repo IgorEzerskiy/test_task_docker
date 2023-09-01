@@ -12,6 +12,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'add-every-30-seconds': {
         'task': 'test_app.tasks.add_order',
-        'schedule': 10.0,
+        'schedule': 60.0,
     },
 }
